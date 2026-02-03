@@ -4,17 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 const segments = [
   {
-<<<<<<< HEAD
     label: "Observe",
     color: "#F4C7A1",
     description: "Watch real people work, decide, struggle, and grow",
     path: "/observe",
-=======
-    label: "Watch",
-    color: "#F4C7A1",
-    description: "Watch real people work, decide, struggle, and grow",
-    path: "/watch",
->>>>>>> 449b9e7 (sa)
   },
   {
     label: "Learn",

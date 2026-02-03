@@ -36,33 +36,8 @@ const pauseItems = [
 
 export default function PauseSection() {
   return (
-<<<<<<< HEAD
-    <section className="py-20 relative">
-      <div className="container mx-auto px-4">
-         <div className="flex items-start justify-between mb-16">
-          <div>
-            <span className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-[#2A1E14] border border-orange-400/30 text-orange-400 font-semibold">
-              📍 SUPPORT 🤝
-            </span>
-
-            <p className="text-white/80 mt-6 text-xl">
-              Get Help, Give Help
-            </p>
-          </div>
-
-          <button className="px-7 py-2.5 rounded-full bg-orange-500 text-black font-medium hover:bg-orange-400 transition">
-            View all
-          </button>
-        </div>
-        
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-          Refresh, Relax, and <span className="gradient-orange-text">Reset</span>
-        </h2>
-        <p className="text-muted-foreground mb-8">Take a moment for yourself</p>
-=======
     <section className="py-24 bg-[#070B24] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative">
->>>>>>> 449b9e7 (sa)
 
         {/* HEADER */}
         <div className="flex items-start justify-between mb-16">

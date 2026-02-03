@@ -6,6 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+
 const observeItems = [
   {
     title: "Successful Roadmap to UI UX Design Journey",
@@ -41,23 +42,23 @@ const observeItems = [
 
 export default function ObserveSection() {
   return (
-    <section className="py-24 bg-[#0A0F2D] relative overflow-hidden">
+    <section className="py-20 bg-[#0A0F2D] relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-transparent to-orange-500/10 blur-[140px]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* HEADER */}
-        <div className="flex items-start justify-between mb-16">
+        <div className="flex items-start justify-between mb-14">
           <div>
-            <span className="inline-flex items-center gap-2 px-10 py-5 rounded-full bg-[#2A1E14] border border-orange-400/30 text-orange-400 font-semibold fontsize-[100px]">
+            <span className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[#2A1E14] border border-orange-400/30 text-orange-400 font-semibold">
               📍 OBSERVE 🤓
             </span>
 
-            <p className="text-white/70 mt-6 text-lg">
+            <p className="text-white/70 mt-5 text-base">
               Sit back & observe real journeys.
             </p>
           </div>
 
-          <button className="px-7 py-2.5 rounded-full bg-orange-500 text-black font-medium hover:bg-orange-400 transition">
+          <button className="px-6 py-2 rounded-full bg-orange-500 text-black font-medium hover:bg-orange-400 transition">
             View all
           </button>
         </div>
@@ -68,52 +69,52 @@ export default function ObserveSection() {
             {observeItems.map((item, i) => (
               <CarouselItem
                 key={i}
-                className="lg:basis-1/3 md:basis-1/2 px-6"
+                className="lg:basis-1/3 md:basis-1/2 px-4"
               >
                 <div className="relative group">
                   {/* WHITE FRAME */}
-                  <div className="absolute -inset-[6px] rounded-[28px] border-[3px] border-white" />
+                  <div className="absolute -inset-[4px] rounded-[24px] border-[2px] border-white" />
 
                   {/* PINK ACCENT */}
-                  <div className="absolute -bottom-3 left-0 right-0 h-[60%] rounded-[28px] bg-[#FF5C8D] -z-10" />
+                  <div className="absolute -bottom-2 left-0 right-0 h-[55%] rounded-[24px] bg-[#FF5C8D] -z-10" />
 
                   {/* MAIN CARD */}
-                  <div className="relative bg-[#0F172A] rounded-[28px] overflow-hidden">
+                  <div className="relative bg-[#0F172A] rounded-[24px] overflow-hidden">
                     {/* IMAGE */}
-                    <div className="relative h-[230px]">
+                    <div className="relative h-[180px]">
                       <img
                         src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover"
                       />
 
-                      {/* PROFILE AVATAR (ONLY THIS CHANGES) */}
+                      {/* PROFILE AVATAR */}
                       <img
                         src={item.profileImage}
                         alt={item.instructor}
-                        className="absolute bottom-[-22px] right-6
-                        w-14 h-14 rounded-full border-4 border-white
+                        className="absolute bottom-[-18px] right-5
+                        w-12 h-12 rounded-full border-4 border-white
                         object-cover bg-white"
                       />
 
                       {/* CATEGORY */}
-                      <span className="absolute top-4 left-4 px-5 py-1.5 rounded-full bg-[#FF9A3C] text-black text-sm font-semibold">
+                      <span className="absolute top-3 left-3 px-4 py-1 rounded-full bg-[#FF9A3C] text-black text-xs font-semibold">
                         {item.category}
                       </span>
 
                       {/* VIEWS */}
-                      <span className="absolute top-4 right-4 px-4 py-1.5 rounded-full bg-[#FFD84D] text-black text-sm font-semibold flex items-center gap-1">
-                        <Eye size={14} /> {item.views}
+                      <span className="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#FFD84D] text-black text-xs font-semibold flex items-center gap-1">
+                        <Eye size={13} /> {item.views}
                       </span>
                     </div>
 
                     {/* CONTENT */}
-                    <div className="p-7 pt-10">
-                      <h3 className="text-2xl font-semibold text-white leading-snug">
+                    <div className="p-5 pt-8">
+                      <h3 className="text-xl font-semibold text-white leading-snug">
                         {item.title}
                       </h3>
 
-                      <p className="text-white/70 mt-3 text-lg">
+                      <p className="text-white/70 mt-2 text-base">
                         With {item.instructor}
                       </p>
                     </div>

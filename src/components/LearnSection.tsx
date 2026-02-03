@@ -39,6 +39,14 @@ const learnItems = [
     episode: "Ep: 1",
     gradient: "from-[#F7B733] via-[#E89A3C] to-[#8E3A59]",
   },
+  {
+    title: "Motion Graphics",
+    subtitle: "Create stunning animations",
+    instructor: "Rahul Mehta",
+    category: "Graphics",
+    episode: "Ep: 1",
+    gradient: "from-[#F7B733] via-[#E89A3C] to-[#8E3A59]",
+  },
 ];
 
 export default function LearnSection() {
@@ -49,21 +57,12 @@ export default function LearnSection() {
         {/* HEADER */}
         <div className="flex items-start justify-between mb-16">
           <div>
-<<<<<<< HEAD
-            <span className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-[#2A1E14] border border-orange-400/30 text-orange-400 font-semibold">
-              📍 LEARN 🤓
-            </span>
-
-            <p className="text-white/80 mt-6 text-xl">
-              Learn Casually, one sip at a time
-=======
             <span className="inline-flex items-center gap-2 px-10 py-5 rounded-full bg-[#2A1E14] border border-orange-400/30 text-orange-400 font-semibold">
               📍 LEARN 🤓
             </span>
 
             <p className="text-white/70 mt-6 text-lg">
               learn casually, one sip at a time.
->>>>>>> 449b9e7 (sa)
             </p>
           </div>
 
@@ -73,54 +72,6 @@ export default function LearnSection() {
         </div>
 
         {/* SLIDER */}
-<<<<<<< HEAD
-      <Carousel opts={{ align: "start", loop: true }}>
-  <CarouselContent className="gap-6">
-    {learnItems.map((item, i) => (
-      <CarouselItem
-        key={i}
-        className="basis-full md:basis-1/2 lg:basis-1/3"
-      >
-        {/* INSTRUCTOR */}
-        <div className="mb-4">
-          <span className="inline-block w-full text-center px-6 py-2 rounded-full bg-orange-400 text-black text-sm font-medium">
-            With {item.instructor}
-          </span>
-        </div>
-
-        {/* CARD */}
-        <div
-          className={`h-[260px] rounded-[28px] p-6
-          bg-gradient-to-br ${item.gradient}
-          flex flex-col justify-between`}
-        >
-          <div className="flex items-center justify-between">
-            <span className="px-4 py-1.5 rounded-full bg-yellow-400 text-black text-sm font-medium">
-              {item.category}
-            </span>
-
-            <span className="px-4 py-1.5 rounded-full bg-yellow-500 text-black text-sm font-medium">
-              ↗ {item.episode}
-            </span>
-          </div>
-
-          <div>
-            <h3 className="text-white text-2xl font-semibold">
-              {item.title}
-            </h3>
-            <p className="text-white/70 mt-2 text-base">
-              {item.subtitle}
-            </p>
-          </div>
-        </div>
-      </CarouselItem>
-    ))}
-  </CarouselContent>
-
-  <CarouselPrevious className="-left-8 bg-orange-500 text-black hover:bg-orange-400" />
-  <CarouselNext className="-right-8 bg-orange-500 text-black hover:bg-orange-400" />
-</Carousel>
-=======
         <Carousel opts={{ align: "start", loop: true }}>
           <CarouselContent>
             {learnItems.map((item, i) => (
@@ -169,7 +120,6 @@ export default function LearnSection() {
           <CarouselPrevious className="-left-8 bg-orange-500 text-black hover:bg-orange-400" />
           <CarouselNext className="-right-8 bg-orange-500 text-black hover:bg-orange-400" />
         </Carousel>
->>>>>>> 449b9e7 (sa)
       </div>
     </section>
   );

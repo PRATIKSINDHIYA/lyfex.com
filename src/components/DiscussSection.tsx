@@ -28,8 +28,6 @@ const discussItems = [
     category: "Robotics",
     date: "Today",
     time: "6 PM",
-<<<<<<< HEAD
-=======
   },
   {
     title: "Why Communication Skills Matter More Than Technical Skills",
@@ -37,7 +35,13 @@ const discussItems = [
     category: "Robotics",
     date: "Today",
     time: "6 PM",
->>>>>>> 449b9e7 (sa)
+  },
+  {
+    title: "Why Communication Skills Matter More Than Technical Skills",
+    speaker: "Sarah Chen",
+    category: "Robotics",
+    date: "Today",
+    time: "6 PM",
   },
 ];
 
@@ -47,15 +51,6 @@ export default function DiscussSection() {
       <div className="max-w-7xl mx-auto px-6 relative">
 
         {/* HEADER */}
-<<<<<<< HEAD
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 sm:mb-16 gap-6">
-          <div>
-            <span className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-[#2A1E14] border border-orange/30 text-orange font-semibold text-sm">
-              📍 DISCUSS 💬
-            </span>
-
-            <p className="text-foreground/80 mt-4 text-lg">
-=======
         <div className="flex items-start justify-between mb-16">
           <div>
             <span className="inline-flex items-center gap-2 px-10 py-5 rounded-full bg-[#2A1E14] border border-orange-400/30 text-orange-400 font-semibold">
@@ -63,27 +58,18 @@ export default function DiscussSection() {
             </span>
 
             <p className="text-white/70 mt-6 text-lg">
->>>>>>> 449b9e7 (sa)
               Talk, ask & share freely
             </p>
           </div>
 
-<<<<<<< HEAD
-          <button className="btn-primary self-start hidden sm:inline-flex">
-=======
           <button className="px-7 py-2.5 rounded-full bg-orange-500 text-black font-medium hover:bg-orange-400 transition">
->>>>>>> 449b9e7 (sa)
             View all
           </button>
         </div>
 
         {/* SLIDER */}
         <Carousel opts={{ align: "start", loop: true }}>
-<<<<<<< HEAD
-          <CarouselContent className="gap-6 sm:gap-8">
-=======
           <CarouselContent className="">
->>>>>>> 449b9e7 (sa)
             {discussItems.map((item, i) => (
               <CarouselItem
                 key={i}

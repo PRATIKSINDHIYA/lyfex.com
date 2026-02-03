@@ -37,11 +37,7 @@ const liveRooms = [
     subtitle: "Live Coding",
     host: "David Kim",
     users: 98,
-<<<<<<< HEAD
     mode: "Observe",
-=======
-    mode: "Watch",
->>>>>>> 449b9e7 (sa)
     gradient: "from-[#FF512F] via-[#F09819] to-[#FFD200]",
   },
 ];
