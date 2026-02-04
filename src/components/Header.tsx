@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +12,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="src/assets/logo.png" alt="Lyfex Logo" className="h-[2.5rem] w-[7rem]" />
+         <img
+            src={logo}
+            alt="Lyfex Logo"
+            className="h-[2.5rem] w-[7rem] object-contain"
+          />
+
+          {/* <img src="src/assets/logo.png" alt="Lyfex Logo" className="h-[2.5rem] w-[7rem]" /> */}
         </div>
 
         {/* Desktop Navigation */}
