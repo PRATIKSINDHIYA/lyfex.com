@@ -122,9 +122,9 @@ export default function Hero() {
           </div>
 
           {/* DESCRIPTION */}
-          <p className="text-center text-white/70 text-xs sm:text-sm md:text-base lg:text-lg max-w-xl sm:max-w-2xl mx-auto leading-relaxed px-4">
+          {/* <p className="text-center text-white/70 text-xs sm:text-sm md:text-base lg:text-lg max-w-xl sm:max-w-2xl mx-auto leading-relaxed px-4">
             Connect, learn, and grow with a community of passionate learners and creators
-          </p>
+          </p> */}
 
           {/* CTA BUTTONS */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center pt-2 sm:pt-4 px-4">
